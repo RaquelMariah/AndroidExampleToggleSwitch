@@ -4,15 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    public ToggleButton toggleSenha;
-    public Switch switchSenha;
-    public TextView textResultado;
+    protected ToggleButton toggleSenha;
+    protected Switch switchSenha;
+    protected TextView textResultado;
+    protected CheckBox checkSenha;
 
 
     @Override
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         toggleSenha = findViewById(R.id.toggleSenha);
         switchSenha = findViewById(R.id.switchSenha);
         textResultado = findViewById(R.id.textResultado);
+        checkSenha = findViewById(R.id.checkSenha);
     }
 
     public void enviar (View view){
